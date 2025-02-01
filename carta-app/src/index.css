@@ -1,0 +1,130 @@
+/* src/Header.css */
+body {
+  margin: 0; /* Elimina el margen por defecto del body */
+  height: 100vh; /* Hace que el body ocupe toda la altura de la ventana */
+  background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+.contenedor {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Fondo blanco para el contenedor */
+}
+
+.contenedor img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contenedor p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+.menu-icon {
+  display: none; /* Oculta el ícono en escritorio */
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 10;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+  }
+  .nav.active {
+    display: flex;
+  }
+  .btn {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  @media (min-width: 768) {
+    .menu-icon {
+      display: none;
+    }
+  }
+}
+.card-main {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+}
+.card-container {
+  width: 400px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  border-radius: 5px;
+}
+.card {
+  display: block;
+  align-items: center;
+  gap: 4px;
+}
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card-body {
+  text-align: center;
+}
