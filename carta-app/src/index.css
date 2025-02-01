@@ -31,7 +31,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: black;
   color: white;
 }
 
@@ -127,4 +127,8 @@ body {
 }
 .card-body {
   text-align: center;
+}
+.card-price {
+  color: #ffd700;
+  font-weight: bold;
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "../index.css";
+import logo from "../img/logo.png";
 export function Header() {
   const [menuActive, setMenuActive] = useState(false);
   const toggleMenu = () => {
@@ -9,7 +10,7 @@ export function Header() {
   };
   return (
     <header className="header">
-      <div className="logo">MiLogo</div>
+      <div className="logo">{logo}</div>
       <nav className={`nav ${menuActive ? "active" : ""}`}>
         <a href="/">Inicio</a>
         <a href="/about">Acerca de</a>
