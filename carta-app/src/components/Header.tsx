@@ -10,13 +10,14 @@ export function Header() {
   };
   return (
     <header className="header">
-      <div className="logo">{logo}</div>
+      <div className="div-logo">
+        <img className="logo" src={logo} alt="" /></div>
       <nav className={`nav ${menuActive ? "active" : ""}`}>
         <a href="/">Inicio</a>
         <a href="/about">Acerca de</a>
         <a href="/contact">Contacto</a>
       </nav>
-      <button className="btn">Acción</button>
+      <button className="btn">Iniciar Sesión</button>
       <div className="menu-icon" onClick={toggleMenu}>
         <FontAwesomeIcon icon={faBars} />
       </div>
