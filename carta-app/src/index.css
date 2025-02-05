@@ -30,17 +30,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: black;
+  padding: 10px 10px;
+  background-color: rgb(99, 99, 98);
   color: white;
 }
-.div-logo{
-  display: flex;
-  align-items: center;
+.div-logo img {
+  width: 80px;
+  max-height: 80;
 }
-.logo {
-  max-height: 50px;
-  width: auto;
+.logo a {
+  font-family: "Dancing Script", serif;
+  text-decoration: none;
 }
 
 .nav {

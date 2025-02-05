@@ -10,8 +10,12 @@ export function Header() {
   };
   return (
     <header className="header">
-      <div className="div-logo">
+      {/* <div className="div-logo">
         <img className="logo" src={logo} alt="" /></div>
+     */}
+      <h3 className="logo">
+        <a href="App.tsx">Chapeaux</a>
+      </h3>
       <nav className={`nav ${menuActive ? "active" : ""}`}>
         <a href="/">Inicio</a>
         <a href="/about">Acerca de</a>
